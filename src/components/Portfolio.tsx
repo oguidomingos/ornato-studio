@@ -1,25 +1,70 @@
 import { useState } from 'react'
 
-const filters = ['Todos', 'Ornamental', 'Fine Line', 'Realismo'] as const
+const filters = ['Todos', 'Realismo', 'Fine Line', 'Ornamental'] as const
 type Filter = typeof filters[number]
 
 interface PortfolioItem {
   id: number
   category: Exclude<Filter, 'Todos'>
   label: string
-  color: string
+  image: string
 }
 
 const items: PortfolioItem[] = [
-  { id: 1, category: 'Ornamental', label: 'Mandala Costas', color: '#2a1f3d' },
-  { id: 2, category: 'Fine Line', label: 'Floral Delicado', color: '#1f2a3d' },
-  { id: 3, category: 'Realismo', label: 'Retrato P&B', color: '#2a2a2a' },
-  { id: 4, category: 'Ornamental', label: 'Geometrico Braco', color: '#3d2a1f' },
-  { id: 5, category: 'Fine Line', label: 'Botanico', color: '#1f3d2a' },
-  { id: 6, category: 'Realismo', label: 'Olho Realista', color: '#3d1f2a' },
-  { id: 7, category: 'Ornamental', label: 'Pontilhismo', color: '#2a3d1f' },
-  { id: 8, category: 'Fine Line', label: 'Minimalista', color: '#1f2a2a' },
-  { id: 9, category: 'Realismo', label: 'Animal Realista', color: '#2a1f2a' },
+  {
+    id: 1,
+    category: 'Realismo',
+    label: 'Retrato Preto & Cinza',
+    image: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 2,
+    category: 'Fine Line',
+    label: 'Floral Delicado',
+    image: 'https://images.unsplash.com/photo-1590246815117-0b5fc71f7094?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 3,
+    category: 'Ornamental',
+    label: 'Mandala Costas',
+    image: 'https://images.unsplash.com/photo-1542727313-4227c1217ee3?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 4,
+    category: 'Realismo',
+    label: 'Olho Realista',
+    image: 'https://images.unsplash.com/photo-1568515045052-f9a854d70bfd?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 5,
+    category: 'Fine Line',
+    label: 'Botanico Minimalista',
+    image: 'https://images.unsplash.com/photo-1604941891519-e142f3843eb0?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 6,
+    category: 'Ornamental',
+    label: 'Geometrico Braco',
+    image: 'https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 7,
+    category: 'Realismo',
+    label: 'Animal Realista',
+    image: 'https://images.unsplash.com/photo-1598371839696-594d4fce8579?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 8,
+    category: 'Fine Line',
+    label: 'Traco Fino Arte',
+    image: 'https://images.unsplash.com/photo-1562962230-16e4623d36e6?w=600&q=80&auto=format&fit=crop',
+  },
+  {
+    id: 9,
+    category: 'Ornamental',
+    label: 'Pontilhismo',
+    image: 'https://images.unsplash.com/photo-1586162002134-c8db42584e2f?w=600&q=80&auto=format&fit=crop',
+  },
 ]
 
 export default function Portfolio() {
@@ -31,26 +76,32 @@ export default function Portfolio() {
       : items.filter((item) => item.category === activeFilter)
 
   return (
-    <section id="portfolio" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="portfolio" className="py-28 sm:py-36 px-5 sm:px-8 lg:px-10 max-w-7xl mx-auto">
       {/* Section header */}
-      <div className="text-center mb-12 sm:mb-16 animate-on-scroll">
-        <p className="text-gold/80 tracking-[0.3em] uppercase text-xs sm:text-sm mb-3">
-          Trabalhos
+      <div className="text-center mb-16 sm:mb-20 animate-on-scroll">
+        <div className="flex items-center justify-center gap-5 mb-5">
+          <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/30" />
+          <p className="text-gold/60 tracking-[0.4em] uppercase text-[10px]">
+            Trabalhos Selecionados
+          </p>
+          <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/30" />
+        </div>
+        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light">Portfolio</h2>
+        <p className="text-white/35 text-[15px] max-w-md mx-auto leading-relaxed font-light">
+          Cada peca e unica, desenhada sob medida para contar a sua historia
         </p>
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl mb-4">Portfolio</h2>
-        <div className="w-16 h-px bg-gold mx-auto" />
       </div>
 
       {/* Filter tabs */}
-      <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-10 sm:mb-14 animate-on-scroll">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-14 sm:mb-16 animate-on-scroll">
         {filters.map((filter) => (
           <button
             key={filter}
             onClick={() => setActiveFilter(filter)}
-            className={`px-4 sm:px-6 py-2 text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 border ${
+            className={`px-6 sm:px-8 py-2.5 text-[11px] tracking-[0.18em] uppercase transition-all duration-500 ${
               activeFilter === filter
-                ? 'border-gold text-gold bg-gold/10'
-                : 'border-gray-700 text-gray-400 hover:border-gold/50 hover:text-gold/80'
+                ? 'bg-gold text-[#0a0a0a] font-medium shadow-[0_0_20px_rgba(201,169,110,0.1)]'
+                : 'text-white/35 hover:text-gold/80 border border-white/[0.06] hover:border-gold/25'
             }`}
           >
             {filter}
@@ -59,28 +110,37 @@ export default function Portfolio() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-        {filtered.map((item) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+        {filtered.map((item, index) => (
           <div
             key={item.id}
-            className="group relative aspect-square overflow-hidden cursor-pointer animate-on-scroll"
+            className={`group relative aspect-[4/5] overflow-hidden cursor-pointer animate-on-scroll-scale stagger-${Math.min(index + 1, 9)}`}
           >
-            {/* Placeholder colored div */}
-            <div
-              className="absolute inset-0 transition-transform duration-500 group-hover:scale-110"
-              style={{ backgroundColor: item.color }}
-            >
-              {/* Decorative pattern overlay */}
-              <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,_rgba(201,169,110,0.3)_0%,_transparent_60%)]" />
-            </div>
+            <img
+              src={item.image}
+              alt={item.label}
+              className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
 
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-[#0a0a0a]/0 group-hover:bg-[#0a0a0a]/60 transition-all duration-300 flex items-center justify-center">
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                <p className="text-gold text-sm tracking-wider uppercase mb-1">{item.category}</p>
-                <p className="text-white font-heading text-xl">{item.label}</p>
+            {/* Gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/10 opacity-40 group-hover:opacity-85 transition-opacity duration-600" />
+
+            {/* Content overlay */}
+            <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-7">
+              <div className="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-600">
+                <p className="text-gold/70 text-[10px] tracking-[0.25em] uppercase mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  {item.category}
+                </p>
+                <p className="text-white/90 font-heading text-lg sm:text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 font-light">
+                  {item.label}
+                </p>
               </div>
             </div>
+
+            {/* Corner accent */}
+            <div className="absolute top-4 right-4 w-5 h-5 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
+            <div className="absolute bottom-4 left-4 w-5 h-5 border-b border-l border-gold/0 group-hover:border-gold/30 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
           </div>
         ))}
       </div>

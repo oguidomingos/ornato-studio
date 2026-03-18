@@ -23,8 +23,16 @@ function App() {
       { threshold: 0.1 }
     )
 
-    const elements = document.querySelectorAll('.animate-on-scroll')
-    elements.forEach((el) => observer.observe(el))
+    const selectors = [
+      '.animate-on-scroll',
+      '.animate-on-scroll-left',
+      '.animate-on-scroll-right',
+      '.animate-on-scroll-scale',
+    ]
+
+    selectors.forEach((selector) => {
+      document.querySelectorAll(selector).forEach((el) => observer.observe(el))
+    })
 
     return () => observer.disconnect()
   }, [])

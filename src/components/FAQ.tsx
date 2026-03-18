@@ -41,46 +41,64 @@ export default function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[#0f0f0f]">
+    <section id="faq" className="py-28 sm:py-36 px-5 sm:px-8 lg:px-10 bg-dark-secondary">
       <div className="max-w-3xl mx-auto">
         {/* Section header */}
-        <div className="text-center mb-12 sm:mb-16 animate-on-scroll">
-          <p className="text-gold/80 tracking-[0.3em] uppercase text-xs sm:text-sm mb-3">
-            Duvidas
-          </p>
-          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl mb-4">Perguntas Frequentes</h2>
-          <div className="w-16 h-px bg-gold mx-auto" />
+        <div className="text-center mb-16 sm:mb-20 animate-on-scroll">
+          <div className="flex items-center justify-center gap-5 mb-5">
+            <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/30" />
+            <p className="text-gold/60 tracking-[0.4em] uppercase text-[10px]">
+              Duvidas
+            </p>
+            <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/30" />
+          </div>
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light">Perguntas Frequentes</h2>
         </div>
 
         {/* Accordion */}
-        <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border border-gray-800 hover:border-gold/30 transition-colors duration-300 animate-on-scroll"
+              className={`border transition-all duration-600 animate-on-scroll stagger-${Math.min(index + 1, 6)} ${
+                openIndex === index
+                  ? 'border-gold/15 bg-gold/[0.015]'
+                  : 'border-white/[0.04] hover:border-white/[0.08]'
+              }`}
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full flex items-center justify-between p-5 sm:p-6 text-left"
+                className="w-full flex items-center justify-between p-6 sm:p-7 text-left group"
               >
-                <span className="text-sm sm:text-base text-white pr-4">{faq.question}</span>
-                <svg
-                  className={`w-5 h-5 text-gold flex-shrink-0 transition-transform duration-300 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
+                <span className={`text-sm sm:text-[15px] pr-6 transition-colors duration-500 font-light ${
+                  openIndex === index ? 'text-gold/90' : 'text-white/60 group-hover:text-white/80'
+                }`}>
+                  {faq.question}
+                </span>
+                <div className={`flex-shrink-0 w-8 h-8 border flex items-center justify-center transition-all duration-500 ${
+                  openIndex === index
+                    ? 'border-gold/25 rotate-45'
+                    : 'border-white/[0.06] group-hover:border-gold/15'
+                }`}>
+                  <svg
+                    className={`w-3 h-3 transition-colors duration-500 ${
+                      openIndex === index ? 'text-gold/80' : 'text-white/25'
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </div>
               </button>
               <div
-                className={`overflow-hidden transition-all duration-300 ${
+                className={`overflow-hidden transition-all duration-600 ${
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-gray-400 text-sm leading-relaxed">
+                <p className="px-6 sm:px-7 pb-7 text-white/30 text-sm leading-[1.9] font-light">
                   {faq.answer}
                 </p>
               </div>
