@@ -20,13 +20,13 @@ const items: PortfolioItem[] = [
   {
     id: 2,
     category: 'Fine Line',
-    label: 'Botanico Delicado',
+    label: 'Botânico Delicado',
     image: '/images/tattoo-fineline-botanical.jpg',
   },
   {
     id: 3,
     category: 'Blackwork',
-    label: 'Dragao Costas Inteiras',
+    label: 'Dragão Costas Inteiras',
     image: '/images/tattoo-blackwork-fullback.jpg',
   },
   {
@@ -38,7 +38,7 @@ const items: PortfolioItem[] = [
   {
     id: 5,
     category: 'Fine Line',
-    label: 'Composicao Autoral',
+    label: 'Composição Autoral',
     image: '/images/tattoo-fineline-evoluir.jpg',
   },
   {
@@ -56,7 +56,7 @@ const items: PortfolioItem[] = [
   {
     id: 8,
     category: 'Fine Line',
-    label: 'Bussola Viajante',
+    label: 'Bússola Viajante',
     image: '/images/tattoo-fineline-compass.jpg',
   },
   {
@@ -68,19 +68,19 @@ const items: PortfolioItem[] = [
   {
     id: 10,
     category: 'Realismo',
-    label: 'Passaro Realista',
+    label: 'Pássaro Realista',
     image: '/images/tattoo-realismo-bird.jpg',
   },
   {
     id: 11,
     category: 'Fine Line',
-    label: 'Camera Fine Line',
+    label: 'Câmera Fine Line',
     image: '/images/tattoo-fineline-camera.jpg',
   },
   {
     id: 12,
     category: 'Blackwork',
-    label: 'Dragao Oriental',
+    label: 'Dragão Oriental',
     image: '/images/tattoo-blackwork-dragon.jpg',
   },
   {
@@ -98,7 +98,7 @@ const items: PortfolioItem[] = [
   {
     id: 15,
     category: 'Fine Line',
-    label: 'Retrato com Geometrico',
+    label: 'Retrato com Geométrico',
     image: '/images/tattoo-realismo-woman-frame.jpg',
   },
 ]
@@ -122,9 +122,9 @@ export default function Portfolio() {
           </p>
           <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
         </div>
-        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Portfolio</h2>
+        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Portfólio</h2>
         <p className="text-text-muted text-[15px] max-w-md mx-auto leading-relaxed font-light">
-          Cada peca e unica, desenhada sob medida para contar a sua historia
+          Cada peça é única, desenhada sob medida para contar a sua história
         </p>
       </div>
 

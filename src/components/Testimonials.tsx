@@ -1,25 +1,25 @@
 const testimonials = [
   {
     name: 'Carolina Souza',
-    text: 'A Hanna e incrivel! Fez exatamente o que eu imaginava e ate superou minhas expectativas. O ambiente e lindo e super higienizado. Recomendo de olhos fechados!',
+    text: 'A Hanna é incrível! Fez exatamente o que eu imaginava e até superou minhas expectativas. O ambiente é lindo e super higienizado. Recomendo de olhos fechados!',
     rating: 5,
     style: 'Realismo',
   },
   {
     name: 'Lucas Ferreira',
-    text: 'Minha terceira tatuagem com a Hanna e cada vez fico mais impressionado com o nivel de detalhe. Ela realmente se importa com cada traco. Artista de verdade.',
+    text: 'Minha terceira tatuagem com a Hanna e cada vez fico mais impressionado com o nível de detalhe. Ela realmente se importa com cada traço. Artista de verdade.',
     rating: 5,
     style: 'Fine Line',
   },
   {
     name: 'Mariana Costa',
-    text: 'Fiz minha primeira tatuagem com a Hanna e me senti super acolhida. Ela explicou todo o processo, foi paciente e o resultado ficou perfeito. Ja quero a proxima!',
+    text: 'Fiz minha primeira tatuagem com a Hanna e me senti super acolhida. Ela explicou todo o processo, foi paciente e o resultado ficou perfeito. Já quero a próxima!',
     rating: 5,
     style: 'Ornamental',
   },
   {
     name: 'Rafael Oliveira',
-    text: 'O realismo que a Hanna faz e de outro nivel. O retrato que ela fez no meu braco parece uma fotografia. Profissional excepcional e atenciosa.',
+    text: 'O realismo que a Hanna faz é de outro nível. O retrato que ela fez no meu braço parece uma fotografia. Profissional excepcional e atenciosa.',
     rating: 5,
     style: 'Realismo P&B',
   },
@@ -46,13 +46,13 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-5 mb-5">
             <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/40" />
             <p className="text-gold tracking-[0.4em] uppercase text-[10px]">
-              Experiencias
+              Experiências
             </p>
             <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
           </div>
           <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Depoimentos</h2>
           <p className="text-text-muted text-[15px] max-w-md mx-auto leading-relaxed font-light">
-            O que meus clientes dizem sobre a experiencia
+            O que meus clientes dizem sobre a experiência
           </p>
         </div>
 

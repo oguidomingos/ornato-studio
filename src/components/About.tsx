@@ -37,29 +37,29 @@ export default function About() {
             <div className="w-12 h-px bg-gold/40 mb-8" />
 
             <p className="text-text-secondary leading-[1.9] mb-6 text-[15px] sm:text-base font-light">
-              Tatuadora ha mais de 8 anos, especializada em realismo preto e cinza,
+              Tatuadora há mais de 8 anos, especializada em realismo preto e cinza,
               fine line e blackwork. Premiada no Ink Summit na categoria Realismo,
-              cada trabalho e unico, pensado especialmente para voce.
+              cada trabalho é único, pensado especialmente para você.
             </p>
 
             <p className="text-text-muted leading-[1.9] mb-6 text-sm sm:text-[15px] font-light">
-              Minha paixao pela arte comecou ainda na adolescencia, quando descobri que
-              o corpo humano e a tela mais extraordinaria que existe. Desde entao, dedico
-              minha vida a criar pecas que contam historias e expressam a essencia de cada
+              Minha paixão pela arte começou ainda na adolescência, quando descobri que
+              o corpo humano é a tela mais extraordinária que existe. Desde então, dedico
+              minha vida a criar peças que contam histórias e expressam a essência de cada
               pessoa.
             </p>
 
             <p className="text-text-muted leading-[1.9] mb-12 text-sm sm:text-[15px] font-light">
-              Cada sessao e uma experiencia unica. Trabalho com materiais de alta
+              Cada sessão é uma experiência única. Trabalho com materiais de alta
               qualidade, em um ambiente acolhedor e higienizado, garantindo sua
-              seguranca e conforto do inicio ao fim.
+              segurança e conforto do início ao fim.
             </p>
 
             {/* Stats */}
             <div className="flex flex-wrap gap-10 sm:gap-14 pt-10 border-t border-border-light">
               <div>
                 <p className="font-heading text-4xl sm:text-5xl text-gold font-light">8+</p>
-                <p className="text-text-muted text-[11px] tracking-[0.15em] uppercase mt-2">Anos de experiencia</p>
+                <p className="text-text-muted text-[11px] tracking-[0.15em] uppercase mt-2">Anos de experiência</p>
               </div>
               <div>
                 <p className="font-heading text-4xl sm:text-5xl text-gold font-light">2000+</p>
@@ -67,7 +67,7 @@ export default function About() {
               </div>
               <div>
                 <p className="font-heading text-4xl sm:text-5xl text-gold font-light">100%</p>
-                <p className="text-text-muted text-[11px] tracking-[0.15em] uppercase mt-2">Dedicacao</p>
+                <p className="text-text-muted text-[11px] tracking-[0.15em] uppercase mt-2">Dedicação</p>
               </div>
             </div>
           </div>

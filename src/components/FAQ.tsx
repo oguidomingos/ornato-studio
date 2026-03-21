@@ -4,32 +4,32 @@ const faqs = [
   {
     question: 'Como funciona o agendamento?',
     answer:
-      'O agendamento e feito pelo WhatsApp. Voce envia sua ideia, conversamos sobre o projeto, e agendamos a sessao. E necessario o pagamento de um sinal para reservar a data.',
+      'O agendamento é feito pelo WhatsApp. Você envia sua ideia, conversamos sobre o projeto, e agendamos a sessão. É necessário o pagamento de um sinal para reservar a data.',
   },
   {
     question: 'Qual o valor de uma tatuagem?',
     answer:
-      'O valor varia de acordo com o tamanho, complexidade, estilo e local do corpo. Cada projeto e orcado individualmente. Entre em contato pelo WhatsApp para receber um orcamento personalizado.',
+      'O valor varia de acordo com o tamanho, complexidade, estilo e local do corpo. Cada projeto é orçado individualmente. Entre em contato pelo WhatsApp para receber um orçamento personalizado.',
   },
   {
-    question: 'Doi muito para tatuar?',
+    question: 'Dói muito para tatuar?',
     answer:
-      'A dor varia de pessoa para pessoa e depende da regiao do corpo. Em geral, e uma sensacao suportavel. Algumas areas como costelas e pes podem ser mais sensiveis. Conversamos sobre isso durante o planejamento.',
+      'A dor varia de pessoa para pessoa e depende da região do corpo. Em geral, é uma sensação suportável. Algumas áreas como costelas e pés podem ser mais sensíveis. Conversamos sobre isso durante o planejamento.',
   },
   {
-    question: 'Quais sao os cuidados apos a tatuagem?',
+    question: 'Quais são os cuidados após a tatuagem?',
     answer:
-      'Apos a sessao, voce recebera um guia completo de cuidados. Em resumo: manter a regiao limpa, aplicar pomada cicatrizante, evitar sol direto, piscina e mar por pelo menos 15 dias, e nao cocar.',
+      'Após a sessão, você receberá um guia completo de cuidados. Em resumo: manter a região limpa, aplicar pomada cicatrizante, evitar sol direto, piscina e mar por pelo menos 15 dias, e não coçar.',
   },
   {
-    question: 'Posso levar minha propria ideia ou referencia?',
+    question: 'Posso levar minha própria ideia ou referência?',
     answer:
-      'Claro! Adoro trabalhar a partir das ideias dos clientes. Voce pode trazer referencias, fotos ou descricoes do que imagina. A partir disso, crio um desenho exclusivo e personalizado para voce.',
+      'Claro! Adoro trabalhar a partir das ideias dos clientes. Você pode trazer referências, fotos ou descrições do que imagina. A partir disso, crio um desenho exclusivo e personalizado para você.',
   },
   {
-    question: 'O estudio e seguro e higienizado?',
+    question: 'O estúdio é seguro e higienizado?',
     answer:
-      'Sim! Seguimos todos os protocolos de biosseguranca. Utilizamos materiais descartaveis e esterilizados, tintas de alta qualidade e o ambiente e higienizado antes e apos cada sessao.',
+      'Sim! Seguimos todos os protocolos de biossegurança. Utilizamos materiais descartáveis e esterilizados, tintas de alta qualidade e o ambiente é higienizado antes e após cada sessão.',
   },
 ]
 
@@ -48,7 +48,7 @@ export default function FAQ() {
           <div className="flex items-center justify-center gap-5 mb-5">
             <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/40" />
             <p className="text-gold tracking-[0.4em] uppercase text-[10px]">
-              Duvidas
+              Dúvidas
             </p>
             <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
           </div>

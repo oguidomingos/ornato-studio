@@ -10,28 +10,28 @@ const services: ServiceItem[] = [
     title: 'Realismo',
     subtitle: 'Preto & Cinza',
     description:
-      'Retratos e imagens hiper-realistas que capturam cada detalhe com perfeicao. Dominio absoluto de luz, sombra e textura para resultados extraordinarios.',
+      'Retratos e imagens hiper-realistas que capturam cada detalhe com perfeição. Domínio absoluto de luz, sombra e textura para resultados extraordinários.',
     image: '/images/tattoo-realismo-ironman.jpg',
   },
   {
     title: 'Fine Line',
-    subtitle: 'Tracos Delicados',
+    subtitle: 'Traços Delicados',
     description:
-      'Tracos finos e delicados que criam tatuagens elegantes e sutis. Perfeito para quem busca algo discreto, mas cheio de significado e personalidade.',
+      'Traços finos e delicados que criam tatuagens elegantes e sutis. Perfeito para quem busca algo discreto, mas cheio de significado e personalidade.',
     image: '/images/tattoo-fineline-botanical.jpg',
   },
   {
     title: 'Ornamental',
-    subtitle: 'Mandalas & Geometricos',
+    subtitle: 'Mandalas & Geométricos',
     description:
-      'Mandalas, geometricos e padroes simetricos que transformam o corpo em uma obra de arte. Tracos precisos e composicoes hipnotizantes.',
+      'Mandalas, geométricos e padrões simétricos que transformam o corpo em uma obra de arte. Traços precisos e composições hipnotizantes.',
     image: '/images/tattoo-ornamental-mandala.jpg',
   },
   {
     title: 'Blackwork',
     subtitle: 'Impacto Visual',
     description:
-      'Preenchimentos solidos e composicoes em preto puro que criam presenca visual poderosa. Ideal para quem busca ousadia e personalidade na pele.',
+      'Preenchimentos sólidos e composições em preto puro que criam presença visual poderosa. Ideal para quem busca ousadia e personalidade na pele.',
     image: '/images/tattoo-blackwork-fullback.jpg',
   },
 ]
@@ -48,9 +48,9 @@ export default function Services() {
           </p>
           <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
         </div>
-        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Servicos</h2>
+        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Serviços</h2>
         <p className="text-text-muted text-[15px] max-w-md mx-auto leading-relaxed font-light">
-          Tecnicas refinadas para cada estilo de arte
+          Técnicas refinadas para cada estilo de arte
         </p>
       </div>
 

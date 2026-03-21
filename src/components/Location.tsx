@@ -10,7 +10,7 @@ export default function Location() {
           </p>
           <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
         </div>
-        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Localizacao</h2>
+        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Localização</h2>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -25,11 +25,11 @@ export default function Location() {
               </svg>
             </div>
             <div>
-              <h3 className="font-heading text-lg mb-2 text-text-primary font-light">Endereco</h3>
+              <h3 className="font-heading text-lg mb-2 text-text-primary font-light">Endereço</h3>
               <p className="text-text-muted text-sm leading-[1.9] font-light">
-                Rua das Carnaubas, 04<br />
+                Rua das Carnaúbas, 04<br />
                 Plaza Mall<br />
-                Aguas Claras, Brasilia-DF
+                Águas Claras, Brasília-DF
               </p>
             </div>
           </div>
@@ -42,14 +42,14 @@ export default function Location() {
               </svg>
             </div>
             <div>
-              <h3 className="font-heading text-lg mb-2 text-text-primary font-light">Horarios</h3>
+              <h3 className="font-heading text-lg mb-2 text-text-primary font-light">Horários</h3>
               <div className="text-text-muted text-sm space-y-2">
                 <p className="flex justify-between gap-8">
                   <span className="font-light">Segunda a Sexta</span>
                   <span className="text-text-secondary">10h — 19h</span>
                 </p>
                 <p className="flex justify-between gap-8">
-                  <span className="font-light">Sabado</span>
+                  <span className="font-light">Sábado</span>
                   <span className="text-text-secondary">10h — 16h</span>
                 </p>
                 <p className="flex justify-between gap-8">
@@ -86,7 +86,7 @@ export default function Location() {
         <div className="animate-on-scroll-right">
           <div className="aspect-square sm:aspect-[4/3] bg-surface border border-border-light overflow-hidden relative group rounded-sm">
             <iframe
-              title="Localizacao Hanna Almeida Tattoo"
+              title="Localização Hanna Almeida Tattoo"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.7!2d-48.028!3d-15.835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDUwJzA2LjAiUyA0OMKwMDEnNDEuMCJX!5e0!3m2!1spt-BR!2sbr!4v1"
               className="w-full h-full border-0 opacity-70 group-hover:opacity-90 transition-opacity duration-700"
               loading="lazy"

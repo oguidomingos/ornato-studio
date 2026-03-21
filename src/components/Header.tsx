@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 
 const navLinks = [
-  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Portfólio', href: '#portfolio' },
   { label: 'Sobre', href: '#sobre' },
-  { label: 'Servicos', href: '#servicos' },
+  { label: 'Serviços', href: '#servicos' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'Local', href: '#local' },
   { label: 'FAQ', href: '#faq' },
@@ -114,7 +114,7 @@ export default function Header() {
             onClick={handleNavClick}
             className="mt-3 text-[12px] tracking-[0.2em] uppercase px-10 py-3.5 border border-gold/40 text-gold hover:bg-gold hover:text-white transition-all duration-500"
           >
-            Agendar Sessao
+            Agendar Sessão
           </a>
         </nav>
       </div>

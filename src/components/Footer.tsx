@@ -17,7 +17,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/25 text-sm leading-relaxed max-w-sm mb-6">
-              Arte na pele, feita com alma. Tatuagem autoral em Brasilia-DF.
+              Arte na pele, feita com alma. Tatuagem autoral em Brasília-DF.
               Especialista em realismo preto e cinza, fine line e ornamental.
             </p>
             {/* Social icons */}
@@ -65,7 +65,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Agende sua Sessao</h4>
+            <h4 className="text-[11px] tracking-[0.2em] uppercase text-white/40 mb-5">Agende sua Sessão</h4>
             <a
               href={WHATSAPP_URL}
               target="_blank"
@@ -75,7 +75,7 @@ export default function Footer() {
               (61) 99999-9999
             </a>
             <p className="text-white/15 text-xs mt-3 leading-relaxed">
-              Aguas Claras, Brasilia-DF
+              Águas Claras, Brasília-DF
             </p>
           </div>
         </div>
