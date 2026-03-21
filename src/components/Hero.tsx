@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background image — tattoo close-up */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=1920&q=80&auto=format&fit=crop"
+          src="/images/hero-bg.jpg"
           alt=""
           className="absolute inset-0 w-full h-full object-cover scale-105"
           loading="eager"

@@ -8,7 +8,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1598371839696-594d4fce8579?w=800&q=85&auto=format&fit=crop"
+                  src="/images/artist-portrait.jpg"
                   alt="Hanna Almeida - Tatuadora"
                   className="w-full h-full object-cover hover:scale-[1.02] transition-all duration-1000"
                   loading="lazy"
