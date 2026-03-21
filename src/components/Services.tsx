@@ -11,28 +11,28 @@ const services: ServiceItem[] = [
     subtitle: 'Preto & Cinza',
     description:
       'Retratos e imagens hiper-realistas que capturam cada detalhe com perfeicao. Dominio absoluto de luz, sombra e textura para resultados extraordinarios.',
-    image: '/images/service-realismo.jpg',
+    image: '/images/tattoo-realismo-ironman.jpg',
   },
   {
     title: 'Fine Line',
     subtitle: 'Tracos Delicados',
     description:
       'Tracos finos e delicados que criam tatuagens elegantes e sutis. Perfeito para quem busca algo discreto, mas cheio de significado e personalidade.',
-    image: '/images/service-fineline.jpg',
+    image: '/images/tattoo-fineline-botanical.jpg',
   },
   {
     title: 'Ornamental',
     subtitle: 'Mandalas & Geometricos',
     description:
       'Mandalas, geometricos e padroes simetricos que transformam o corpo em uma obra de arte. Tracos precisos e composicoes hipnotizantes.',
-    image: '/images/service-ornamental.jpg',
+    image: '/images/tattoo-ornamental-mandala.jpg',
   },
   {
     title: 'Blackwork',
     subtitle: 'Impacto Visual',
     description:
       'Preenchimentos solidos e composicoes em preto puro que criam presenca visual poderosa. Ideal para quem busca ousadia e personalidade na pele.',
-    image: '/images/service-blackwork.jpg',
+    image: '/images/tattoo-blackwork-fullback.jpg',
   },
 ]
 

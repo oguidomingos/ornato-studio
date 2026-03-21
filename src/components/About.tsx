@@ -8,7 +8,7 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[3/4] overflow-hidden rounded-sm">
                 <img
-                  src="/images/artist-portrait.jpg"
+                  src="/images/hanna-portrait.jpg"
                   alt="Hanna Almeida - Tatuadora"
                   className="w-full h-full object-cover hover:scale-[1.02] transition-all duration-1000"
                   loading="lazy"
@@ -38,7 +38,8 @@ export default function About() {
 
             <p className="text-text-secondary leading-[1.9] mb-6 text-[15px] sm:text-base font-light">
               Tatuadora ha mais de 8 anos, especializada em realismo preto e cinza,
-              fine line e ornamental. Cada trabalho e unico, pensado especialmente para voce.
+              fine line e blackwork. Premiada no Ink Summit na categoria Realismo,
+              cada trabalho e unico, pensado especialmente para voce.
             </p>
 
             <p className="text-text-muted leading-[1.9] mb-6 text-sm sm:text-[15px] font-light">

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const filters = ['Todos', 'Realismo', 'Fine Line', 'Ornamental'] as const
+const filters = ['Todos', 'Realismo', 'Fine Line', 'Blackwork'] as const
 type Filter = typeof filters[number]
 
 interface PortfolioItem {
@@ -14,56 +14,92 @@ const items: PortfolioItem[] = [
   {
     id: 1,
     category: 'Realismo',
-    label: 'Retrato Preto & Cinza',
-    image: '/images/portfolio-1.jpg',
+    label: 'Retrato Hiper-Realista',
+    image: '/images/tattoo-realismo-ironman.jpg',
   },
   {
     id: 2,
     category: 'Fine Line',
-    label: 'Floral Delicado',
-    image: '/images/portfolio-4.jpg',
+    label: 'Botanico Delicado',
+    image: '/images/tattoo-fineline-botanical.jpg',
   },
   {
     id: 3,
-    category: 'Ornamental',
-    label: 'Mandala Costas',
-    image: '/images/portfolio-7.jpg',
+    category: 'Blackwork',
+    label: 'Dragao Costas Inteiras',
+    image: '/images/tattoo-blackwork-fullback.jpg',
   },
   {
     id: 4,
     category: 'Realismo',
-    label: 'Olho Realista',
-    image: '/images/portfolio-2.jpg',
+    label: 'Polvo Realista',
+    image: '/images/tattoo-realismo-octopus.jpg',
   },
   {
     id: 5,
     category: 'Fine Line',
-    label: 'Botanico Minimalista',
-    image: '/images/portfolio-5.jpg',
+    label: 'Composicao Autoral',
+    image: '/images/tattoo-fineline-evoluir.jpg',
   },
   {
     id: 6,
-    category: 'Ornamental',
-    label: 'Geometrico Braco',
-    image: '/images/portfolio-8.jpg',
+    category: 'Realismo',
+    label: 'Retrato Feminino',
+    image: '/images/tattoo-realismo-portrait.jpg',
   },
   {
     id: 7,
     category: 'Realismo',
-    label: 'Leao Realista',
-    image: '/images/portfolio-3.jpg',
+    label: 'Guerreiro Espartano',
+    image: '/images/tattoo-realismo-spartan.jpg',
   },
   {
     id: 8,
     category: 'Fine Line',
-    label: 'Traco Fino Arte',
-    image: '/images/portfolio-6.jpg',
+    label: 'Bussola Viajante',
+    image: '/images/tattoo-fineline-compass.jpg',
   },
   {
     id: 9,
-    category: 'Ornamental',
-    label: 'Pontilhismo',
-    image: '/images/portfolio-9.jpg',
+    category: 'Realismo',
+    label: 'Cover-up Realista',
+    image: '/images/tattoo-realismo-coverup.jpg',
+  },
+  {
+    id: 10,
+    category: 'Realismo',
+    label: 'Passaro Realista',
+    image: '/images/tattoo-realismo-bird.jpg',
+  },
+  {
+    id: 11,
+    category: 'Fine Line',
+    label: 'Camera Fine Line',
+    image: '/images/tattoo-fineline-camera.jpg',
+  },
+  {
+    id: 12,
+    category: 'Blackwork',
+    label: 'Dragao Oriental',
+    image: '/images/tattoo-blackwork-dragon.jpg',
+  },
+  {
+    id: 13,
+    category: 'Realismo',
+    label: 'Blue Jay Colorido',
+    image: '/images/tattoo-realismo-bluejay.jpg',
+  },
+  {
+    id: 14,
+    category: 'Realismo',
+    label: 'Pet Realista',
+    image: '/images/tattoo-realismo-dog.jpg',
+  },
+  {
+    id: 15,
+    category: 'Fine Line',
+    label: 'Retrato com Geometrico',
+    image: '/images/tattoo-realismo-woman-frame.jpg',
   },
 ]
 
