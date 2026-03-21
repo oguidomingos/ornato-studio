@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const filters = ['Todos', 'Realismo', 'Fine Line', 'Blackwork'] as const
 type Filter = typeof filters[number]
@@ -129,11 +129,16 @@ const items: PortfolioItem[] = [
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState<Filter>('Todos')
+  const [animKey, setAnimKey] = useState(0)
 
   const filtered =
     activeFilter === 'Todos'
       ? items
       : items.filter((item) => item.category === activeFilter)
+
+  useEffect(() => {
+    setAnimKey((k) => k + 1)
+  }, [activeFilter])
 
   return (
     <section id="portfolio" className="py-28 sm:py-36 px-5 sm:px-8 lg:px-10 max-w-7xl mx-auto">
@@ -170,11 +175,12 @@ export default function Portfolio() {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+      <div key={animKey} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
         {filtered.map((item, index) => (
           <div
             key={item.id}
-            className={`group relative aspect-[4/5] overflow-hidden cursor-pointer animate-on-scroll-scale stagger-${Math.min(index + 1, 9)} rounded-sm`}
+            className="group relative aspect-[4/5] overflow-hidden cursor-pointer rounded-sm animate-portfolio-item"
+            style={{ animationDelay: `${index * 0.06}s` }}
           >
             <img
               src={item.image}
