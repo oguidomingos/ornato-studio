@@ -101,6 +101,30 @@ const items: PortfolioItem[] = [
     label: 'Retrato com Geométrico',
     image: '/images/tattoo-realismo-woman-frame.jpg',
   },
+  {
+    id: 16,
+    category: 'Blackwork',
+    label: 'Adaga com Olho',
+    image: '/images/tattoo-blackwork-dagger.jpg',
+  },
+  {
+    id: 17,
+    category: 'Blackwork',
+    label: 'Blackwork Geométrico',
+    image: '/images/tattoo-blackwork-2.jpg',
+  },
+  {
+    id: 18,
+    category: 'Fine Line',
+    label: 'Fine Line Floral',
+    image: '/images/tattoo-fineline-2.jpg',
+  },
+  {
+    id: 19,
+    category: 'Fine Line',
+    label: 'Fine Line Minimalista',
+    image: '/images/tattoo-fineline-3.jpg',
+  },
 ]
 
 export default function Portfolio() {
