@@ -1,4 +1,4 @@
-const WHATSAPP_URL = 'https://wa.me/5561999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20na%20Ornato%20Estudio.'
+const WHATSAPP_URL = 'https://wa.me/5561999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20tatuagem%20com%20a%20Hanna%20Almeida.'
 
 export default function WhatsAppFloat() {
   return (

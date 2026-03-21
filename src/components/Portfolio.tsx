@@ -50,8 +50,8 @@ const items: PortfolioItem[] = [
   {
     id: 7,
     category: 'Realismo',
-    label: 'Animal Realista',
-    image: 'https://images.unsplash.com/photo-1598371839696-594d4fce8579?w=600&q=80&auto=format&fit=crop',
+    label: 'Leao Realista',
+    image: 'https://images.unsplash.com/photo-1475686913550-3e3391978b17?w=600&q=80&auto=format&fit=crop',
   },
   {
     id: 8,
@@ -80,14 +80,14 @@ export default function Portfolio() {
       {/* Section header */}
       <div className="text-center mb-16 sm:mb-20 animate-on-scroll">
         <div className="flex items-center justify-center gap-5 mb-5">
-          <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/30" />
-          <p className="text-gold/60 tracking-[0.4em] uppercase text-[10px]">
+          <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/40" />
+          <p className="text-gold tracking-[0.4em] uppercase text-[10px]">
             Trabalhos Selecionados
           </p>
-          <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/30" />
+          <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
         </div>
-        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light">Portfolio</h2>
-        <p className="text-white/35 text-[15px] max-w-md mx-auto leading-relaxed font-light">
+        <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Portfolio</h2>
+        <p className="text-text-muted text-[15px] max-w-md mx-auto leading-relaxed font-light">
           Cada peca e unica, desenhada sob medida para contar a sua historia
         </p>
       </div>
@@ -100,8 +100,8 @@ export default function Portfolio() {
             onClick={() => setActiveFilter(filter)}
             className={`px-6 sm:px-8 py-2.5 text-[11px] tracking-[0.18em] uppercase transition-all duration-500 ${
               activeFilter === filter
-                ? 'bg-gold text-[#0a0a0a] font-medium shadow-[0_0_20px_rgba(201,169,110,0.1)]'
-                : 'text-white/35 hover:text-gold/80 border border-white/[0.06] hover:border-gold/25'
+                ? 'bg-gold text-white font-medium shadow-[0_0_20px_rgba(176,141,87,0.12)]'
+                : 'text-text-muted hover:text-gold border border-border-light hover:border-gold/40'
             }`}
           >
             {filter}
@@ -114,7 +114,7 @@ export default function Portfolio() {
         {filtered.map((item, index) => (
           <div
             key={item.id}
-            className={`group relative aspect-[4/5] overflow-hidden cursor-pointer animate-on-scroll-scale stagger-${Math.min(index + 1, 9)}`}
+            className={`group relative aspect-[4/5] overflow-hidden cursor-pointer animate-on-scroll-scale stagger-${Math.min(index + 1, 9)} rounded-sm`}
           >
             <img
               src={item.image}
@@ -124,23 +124,23 @@ export default function Portfolio() {
             />
 
             {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/10 opacity-40 group-hover:opacity-85 transition-opacity duration-600" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/80 via-transparent to-transparent opacity-40 group-hover:opacity-90 transition-opacity duration-600" />
 
             {/* Content overlay */}
             <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-7">
               <div className="transform translate-y-3 group-hover:translate-y-0 transition-transform duration-600">
-                <p className="text-gold/70 text-[10px] tracking-[0.25em] uppercase mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-gold-light text-[10px] tracking-[0.25em] uppercase mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   {item.category}
                 </p>
-                <p className="text-white/90 font-heading text-lg sm:text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 font-light">
+                <p className="text-white font-heading text-lg sm:text-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 font-light">
                   {item.label}
                 </p>
               </div>
             </div>
 
             {/* Corner accent */}
-            <div className="absolute top-4 right-4 w-5 h-5 border-t border-r border-gold/0 group-hover:border-gold/30 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
-            <div className="absolute bottom-4 left-4 w-5 h-5 border-b border-l border-gold/0 group-hover:border-gold/30 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
+            <div className="absolute top-4 right-4 w-5 h-5 border-t border-r border-gold/0 group-hover:border-gold-light/40 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
+            <div className="absolute bottom-4 left-4 w-5 h-5 border-b border-l border-gold/0 group-hover:border-gold-light/40 transition-all duration-600 group-hover:w-6 group-hover:h-6" />
           </div>
         ))}
       </div>

@@ -41,18 +41,18 @@ export default function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-28 sm:py-36 px-5 sm:px-8 lg:px-10 bg-dark-secondary">
+    <section id="faq" className="py-28 sm:py-36 px-5 sm:px-8 lg:px-10 bg-surface-alt">
       <div className="max-w-3xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16 sm:mb-20 animate-on-scroll">
           <div className="flex items-center justify-center gap-5 mb-5">
-            <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/30" />
-            <p className="text-gold/60 tracking-[0.4em] uppercase text-[10px]">
+            <span className="w-10 h-px bg-gradient-to-r from-transparent to-gold/40" />
+            <p className="text-gold tracking-[0.4em] uppercase text-[10px]">
               Duvidas
             </p>
-            <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/30" />
+            <span className="w-10 h-px bg-gradient-to-l from-transparent to-gold/40" />
           </div>
-          <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light">Perguntas Frequentes</h2>
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-[3.5rem] mb-5 font-light text-text-primary">Perguntas Frequentes</h2>
         </div>
 
         {/* Accordion */}
@@ -60,10 +60,10 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border transition-all duration-600 animate-on-scroll stagger-${Math.min(index + 1, 6)} ${
+              className={`border transition-all duration-600 animate-on-scroll stagger-${Math.min(index + 1, 6)} rounded-sm ${
                 openIndex === index
-                  ? 'border-gold/15 bg-gold/[0.015]'
-                  : 'border-white/[0.04] hover:border-white/[0.08]'
+                  ? 'border-gold/20 bg-white'
+                  : 'border-border-light hover:border-gold/15 bg-surface'
               }`}
             >
               <button
@@ -71,18 +71,18 @@ export default function FAQ() {
                 className="w-full flex items-center justify-between p-6 sm:p-7 text-left group"
               >
                 <span className={`text-sm sm:text-[15px] pr-6 transition-colors duration-500 font-light ${
-                  openIndex === index ? 'text-gold/90' : 'text-white/60 group-hover:text-white/80'
+                  openIndex === index ? 'text-gold' : 'text-text-secondary group-hover:text-text-primary'
                 }`}>
                   {faq.question}
                 </span>
-                <div className={`flex-shrink-0 w-8 h-8 border flex items-center justify-center transition-all duration-500 ${
+                <div className={`flex-shrink-0 w-8 h-8 border flex items-center justify-center transition-all duration-500 rounded-sm ${
                   openIndex === index
-                    ? 'border-gold/25 rotate-45'
-                    : 'border-white/[0.06] group-hover:border-gold/15'
+                    ? 'border-gold/30 rotate-45'
+                    : 'border-border-light group-hover:border-gold/20'
                 }`}>
                   <svg
                     className={`w-3 h-3 transition-colors duration-500 ${
-                      openIndex === index ? 'text-gold/80' : 'text-white/25'
+                      openIndex === index ? 'text-gold' : 'text-text-muted'
                     }`}
                     fill="none"
                     stroke="currentColor"
@@ -98,7 +98,7 @@ export default function FAQ() {
                   openIndex === index ? 'max-h-96' : 'max-h-0'
                 }`}
               >
-                <p className="px-6 sm:px-7 pb-7 text-white/30 text-sm leading-[1.9] font-light">
+                <p className="px-6 sm:px-7 pb-7 text-text-muted text-sm leading-[1.9] font-light">
                   {faq.answer}
                 </p>
               </div>
