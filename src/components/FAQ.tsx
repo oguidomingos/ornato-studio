@@ -60,11 +60,12 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border transition-all duration-600 animate-on-scroll stagger-${Math.min(index + 1, 6)} rounded-sm ${
+              className={`border transition-[border-color,background-color] duration-600 animate-faq-item rounded-sm ${
                 openIndex === index
                   ? 'border-gold/20 bg-white'
                   : 'border-border-light hover:border-gold/15 bg-surface'
               }`}
+              style={{ animationDelay: `${index * 0.08}s` }}
             >
               <button
                 onClick={() => toggle(index)}
