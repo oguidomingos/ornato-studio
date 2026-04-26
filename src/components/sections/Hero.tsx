@@ -1,0 +1,69 @@
+import { ArrowDown, Instagram } from 'lucide-react'
+import { SITE_CONFIG, WHATSAPP_URL } from '@/data/content'
+
+export function Hero() {
+  return (
+    <section
+      id="hero"
+      className="relative flex min-h-screen items-center justify-center overflow-hidden"
+      aria-label="Início"
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(201,169,110,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(201,169,110,0.1),transparent_50%)]" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+        <div className="mb-4 inline-block rounded-full border border-accent/30 px-4 py-1.5">
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
+            {SITE_CONFIG.address}
+          </span>
+        </div>
+
+        <h1 className="font-heading text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+          <span className="text-accent">{SITE_CONFIG.name}</span>
+        </h1>
+
+        <p className="mx-auto mt-4 max-w-xl font-heading text-xl text-muted-foreground sm:text-2xl md:text-3xl">
+          {SITE_CONFIG.tagline}
+        </p>
+
+        <p className="mx-auto mt-6 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
+          Arte exclusiva na pele por{' '}
+          <span className="font-semibold text-foreground">{SITE_CONFIG.artist}</span>.
+          Cada traço conta uma história única.
+        </p>
+
+        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-background transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/20"
+          >
+            Agendar Sessão
+          </a>
+          <a
+            href={SITE_CONFIG.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3.5 text-base font-medium text-foreground transition-all hover:border-accent hover:text-accent"
+          >
+            <Instagram className="h-5 w-5" />
+            {SITE_CONFIG.instagram}
+          </a>
+        </div>
+      </div>
+
+      <a
+        href="#portfolio"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground transition-colors hover:text-accent"
+        aria-label="Rolar para portfólio"
+      >
+        <ArrowDown className="h-6 w-6" />
+      </a>
+    </section>
+  )
+}
