@@ -17,22 +17,41 @@ export interface PortfolioItem {
   id: number
   src: string
   alt: string
-  category: 'ornamental' | 'fineline' | 'realismo'
+  category: 'realismo' | 'fineline' | 'blackwork' | 'cobertura' | 'concept'
 }
 
 export const portfolioItems: PortfolioItem[] = [
-  { id: 1, src: '/portfolio/ornamental-01.jpg', alt: 'Tatuagem ornamental em braço', category: 'ornamental' },
-  { id: 2, src: '/portfolio/ornamental-02.jpg', alt: 'Tatuagem ornamental em costas', category: 'ornamental' },
-  { id: 3, src: '/portfolio/ornamental-03.jpg', alt: 'Tatuagem ornamental geométrica', category: 'ornamental' },
-  { id: 4, src: '/portfolio/ornamental-04.jpg', alt: 'Tatuagem ornamental mandala', category: 'ornamental' },
-  { id: 5, src: '/portfolio/fineline-01.jpg', alt: 'Tatuagem fine line floral', category: 'fineline' },
-  { id: 6, src: '/portfolio/fineline-02.jpg', alt: 'Tatuagem fine line minimalista', category: 'fineline' },
-  { id: 7, src: '/portfolio/fineline-03.jpg', alt: 'Tatuagem fine line delicada', category: 'fineline' },
-  { id: 8, src: '/portfolio/fineline-04.jpg', alt: 'Tatuagem fine line botânica', category: 'fineline' },
-  { id: 9, src: '/portfolio/realismo-01.jpg', alt: 'Tatuagem realismo retrato', category: 'realismo' },
-  { id: 10, src: '/portfolio/realismo-02.jpg', alt: 'Tatuagem realismo animal', category: 'realismo' },
-  { id: 11, src: '/portfolio/realismo-03.jpg', alt: 'Tatuagem realismo natureza', category: 'realismo' },
-  { id: 12, src: '/portfolio/realismo-04.jpg', alt: 'Tatuagem realismo floral', category: 'realismo' },
+  { id: 1, src: 'images/realismo-01.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 2, src: 'images/realismo-02.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 3, src: 'images/realismo-03.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 4, src: 'images/realismo-04.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 5, src: 'images/realismo-05.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 6, src: 'images/realismo-06.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 7, src: 'images/realismo-07.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 8, src: 'images/realismo-08.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 9, src: 'images/realismo-09.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 10, src: 'images/realismo-10.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 11, src: 'images/realismo-11.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 12, src: 'images/realismo-12.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 13, src: 'images/realismo-13.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 14, src: 'images/realismo-14.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 15, src: 'images/realismo-15.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 16, src: 'images/realismo-16.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 17, src: 'images/realismo-17.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 18, src: 'images/realismo-18.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 19, src: 'images/realismo-19.jpg', alt: 'Tatuagem realismo', category: 'realismo' },
+  { id: 20, src: 'images/fineline-01.jpg', alt: 'Tatuagem fine line floral', category: 'fineline' },
+  { id: 21, src: 'images/fineline-02.jpg', alt: 'Tatuagem fine line', category: 'fineline' },
+  { id: 22, src: 'images/fineline-03.jpg', alt: 'Tatuagem fine line', category: 'fineline' },
+  { id: 23, src: 'images/fineline-04.jpg', alt: 'Tatuagem fine line', category: 'fineline' },
+  { id: 24, src: 'images/fineline-05.jpg', alt: 'Tatuagem fine line', category: 'fineline' },
+  { id: 25, src: 'images/blackwork-01.jpg', alt: 'Tatuagem blackwork', category: 'blackwork' },
+  { id: 26, src: 'images/cobertura-01.jpg', alt: 'Cobertura de tatuagem', category: 'cobertura' },
+  { id: 27, src: 'images/cobertura-02.jpg', alt: 'Cobertura de tatuagem', category: 'cobertura' },
+  { id: 28, src: 'images/concept-01.jpg', alt: 'Tatuagem concept art', category: 'concept' },
+  { id: 29, src: 'images/concept-02.jpg', alt: 'Tatuagem concept art', category: 'concept' },
+  { id: 30, src: 'images/concept-03.jpg', alt: 'Tatuagem concept art', category: 'concept' },
+  { id: 31, src: 'images/concept-04.jpg', alt: 'Tatuagem concept art', category: 'concept' },
 ]
 
 export interface Service {
@@ -44,30 +63,37 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: 'Ornamental',
+    title: 'Realismo',
     description:
-      'Padrões geométricos, mandalas e arabescos que criam composições simétricas e elegantes. Traços precisos e detalhados.',
-    priceRange: 'A partir de R$ 400',
-    duration: '2 a 5 horas',
+      'Reprodução fiel de imagens com riqueza de detalhes, sombras e texturas. Retratos, animais e natureza em preto e cinza.',
+    priceRange: 'A partir de R$ 600',
+    duration: '3 a 8 horas',
   },
   {
-    title: 'Fine Line',
+    title: 'Fine Line & Floral',
     description:
       'Traços finos e delicados, perfeitos para designs minimalistas, florais e botânicos. Sutileza e refinamento.',
     priceRange: 'A partir de R$ 300',
     duration: '1 a 3 horas',
   },
   {
-    title: 'Realismo',
+    title: 'Blackwork',
     description:
-      'Reprodução fiel de imagens com riqueza de detalhes, sombras e texturas. Retratos, animais e natureza.',
-    priceRange: 'A partir de R$ 600',
-    duration: '3 a 8 horas',
+      'Preenchimentos sólidos em preto, criando contrastes marcantes e composições ousadas com impacto visual.',
+    priceRange: 'A partir de R$ 400',
+    duration: '2 a 5 horas',
   },
   {
-    title: 'Projetos Personalizados',
+    title: 'Cobertura',
     description:
-      'Criação autoral e exclusiva a partir da sua ideia. Cada tatuagem é única e feita sob medida para você.',
+      'Transformação de tatuagens antigas em novas obras de arte. Técnicas especializadas para coberturas perfeitas.',
+    priceRange: 'Sob consulta',
+    duration: 'Variável',
+  },
+  {
+    title: 'Concept Art',
+    description:
+      'Criação autoral e exclusiva. Peças únicas que mesclam estilos e conceitos para uma tatuagem verdadeiramente sua.',
     priceRange: 'Sob consulta',
     duration: 'Variável',
   },

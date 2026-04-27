@@ -6,9 +6,11 @@ type Category = 'todos' | PortfolioItem['category']
 
 const categories: { value: Category; label: string }[] = [
   { value: 'todos', label: 'Todos' },
-  { value: 'ornamental', label: 'Ornamental' },
-  { value: 'fineline', label: 'Fine Line' },
   { value: 'realismo', label: 'Realismo' },
+  { value: 'fineline', label: 'Fine Line' },
+  { value: 'blackwork', label: 'Blackwork' },
+  { value: 'cobertura', label: 'Cobertura' },
+  { value: 'concept', label: 'Concept' },
 ]
 
 export function Portfolio() {
@@ -59,14 +61,12 @@ export function Portfolio() {
               key={item.id}
               className="group relative aspect-square overflow-hidden rounded-lg bg-muted"
             >
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-muted to-card">
-                <div className="text-center p-4">
-                  <div className="mx-auto mb-2 h-12 w-12 rounded-full bg-accent/10 flex items-center justify-center">
-                    <span className="text-accent text-lg">&#10022;</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground">{item.alt}</p>
-                </div>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}${item.src}`}
+                alt={item.alt}
+                loading="lazy"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-background/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
                 <div className="w-full p-3">
                   <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-medium text-accent">
@@ -76,12 +76,6 @@ export function Portfolio() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-6 text-center">
-          <p className="text-sm text-muted-foreground">
-            Fotos dos trabalhos serão adicionadas em breve. Acompanhe pelo Instagram!
-          </p>
         </div>
       </div>
     </section>
