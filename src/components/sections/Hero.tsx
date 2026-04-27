@@ -8,12 +8,12 @@ export function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
       aria-label="Início"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
-
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(201,169,110,0.15),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(201,169,110,0.1),transparent_50%)]" />
-      </div>
+      <img
+        src={`${import.meta.env.BASE_URL}images/hanna-tattooing.jpg`}
+        alt="Hanna Almeida tatuando no estúdio"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/85 to-background" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <div className="mb-4 inline-block rounded-full border border-accent/30 px-4 py-1.5">

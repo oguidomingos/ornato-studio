@@ -26,16 +26,11 @@ export function About() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
-              <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-muted to-background">
-                <div className="text-center p-8">
-                  <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-accent/10 flex items-center justify-center">
-                    <span className="text-accent text-4xl font-heading font-bold">H</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Foto da {SITE_CONFIG.artist}
-                  </p>
-                </div>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}images/hanna-portrait.jpg`}
+                alt={`${SITE_CONFIG.artist} — tatuadora em Brasília`}
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
 
