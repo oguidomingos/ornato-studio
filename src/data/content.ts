@@ -57,7 +57,6 @@ export const portfolioItems: PortfolioItem[] = [
 export interface Service {
   title: string
   description: string
-  priceRange: string
   duration: string
 }
 
@@ -66,35 +65,30 @@ export const services: Service[] = [
     title: 'Realismo',
     description:
       'Reprodução fiel de imagens com riqueza de detalhes, sombras e texturas. Retratos, animais e natureza em preto e cinza.',
-    priceRange: 'A partir de R$ 600',
     duration: '3 a 8 horas',
   },
   {
     title: 'Fine Line & Floral',
     description:
       'Traços finos e delicados, perfeitos para designs minimalistas, florais e botânicos. Sutileza e refinamento.',
-    priceRange: 'A partir de R$ 300',
     duration: '1 a 3 horas',
   },
   {
     title: 'Blackwork',
     description:
       'Preenchimentos sólidos em preto, criando contrastes marcantes e composições ousadas com impacto visual.',
-    priceRange: 'A partir de R$ 400',
     duration: '2 a 5 horas',
   },
   {
     title: 'Cobertura',
     description:
       'Transformação de tatuagens antigas em novas obras de arte. Técnicas especializadas para coberturas perfeitas.',
-    priceRange: 'Sob consulta',
     duration: 'Variável',
   },
   {
     title: 'Concept Art',
     description:
       'Criação autoral e exclusiva. Peças únicas que mesclam estilos e conceitos para uma tatuagem verdadeiramente sua.',
-    priceRange: 'Sob consulta',
     duration: 'Variável',
   },
 ]

@@ -33,10 +33,7 @@ export function Services() {
                 {service.description}
               </p>
 
-              <div className="mt-6 space-y-2 border-t border-border pt-4">
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="font-medium text-accent">{service.priceRange}</span>
-                </div>
+              <div className="mt-6 border-t border-border pt-4">
                 <div className="flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
                   {service.duration}
@@ -47,9 +44,6 @@ export function Services() {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-4 text-sm text-muted-foreground">
-            Valores de referência. O orçamento final depende do tamanho, detalhes e complexidade do projeto.
-          </p>
           <a
             href={WHATSAPP_URL}
             target="_blank"
