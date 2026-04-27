@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = '5561999999999'
+export const WHATSAPP_NUMBER = '5562985168215'
 export const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar uma sessão na Ornato Estudio.'
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
@@ -9,8 +9,8 @@ export const SITE_CONFIG = {
     'Estúdio de tatuagem autoral em Brasília-DF. Especialista em ornamental, fine line e realismo. Transforme sua ideia em arte na pele.',
   artist: 'Hanna Almeida',
   address: 'Plaza Mall, Águas Claras, Brasília-DF',
-  instagram: '@ornatoestudio',
-  instagramUrl: 'https://www.instagram.com/ornatoestudio',
+  instagram: '@hanna_almeidatattoo',
+  instagramUrl: 'https://www.instagram.com/hanna_almeidatattoo',
 }
 
 export interface PortfolioItem {
