@@ -1,4 +1,4 @@
-import { Instagram, MapPin, MessageCircle } from 'lucide-react'
+import { MapPin, MessageCircle } from 'lucide-react'
 import { SITE_CONFIG, WHATSAPP_URL } from '@/data/content'
 
 export function Footer() {
@@ -41,17 +41,6 @@ export function Footer() {
                 >
                   <MessageCircle className="h-4 w-4" />
                   WhatsApp
-                </a>
-              </li>
-              <li>
-                <a
-                  href={SITE_CONFIG.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-accent"
-                >
-                  <Instagram className="h-4 w-4" />
-                  {SITE_CONFIG.instagram}
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">

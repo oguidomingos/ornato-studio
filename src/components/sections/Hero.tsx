@@ -1,4 +1,4 @@
-import { ArrowDown, Instagram } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import { SITE_CONFIG, WHATSAPP_URL } from '@/data/content'
 
 export function Hero() {
@@ -44,15 +44,6 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-base font-semibold text-background transition-all hover:bg-accent-dark hover:shadow-lg hover:shadow-accent/20"
           >
             Agendar Sessão
-          </a>
-          <a
-            href={SITE_CONFIG.instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3.5 text-base font-medium text-foreground transition-all hover:border-accent hover:text-accent"
-          >
-            <Instagram className="h-5 w-5" />
-            {SITE_CONFIG.instagram}
           </a>
         </div>
       </div>
