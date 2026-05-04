@@ -18,7 +18,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <div className="mb-4 inline-block rounded-full border border-accent/30 px-4 py-1.5">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-accent">
-            {SITE_CONFIG.address}
+            Tatuadora em Brasília-DF
           </span>
         </div>
 

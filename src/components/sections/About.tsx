@@ -4,8 +4,8 @@ import { SITE_CONFIG } from '@/data/content'
 const highlights = [
   {
     icon: Award,
-    title: 'Experiência',
-    description: 'Anos de dedicação à arte da tatuagem com aperfeiçoamento constante em técnicas e estilos.',
+    title: '8 Anos',
+    description: '8 anos de dedicação à arte da tatuagem com aperfeiçoamento constante em técnicas e estilos.',
   },
   {
     icon: Heart,
@@ -44,7 +44,7 @@ export function About() {
 
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
               <p>
-                Hanna Almeida é tatuadora e fundadora do Ornato Estudio, localizado no Plaza Mall em Águas Claras, Brasília-DF.
+                Hanna Almeida é tatuadora em Brasília-DF com 8 anos de experiência.
                 Apaixonada pela arte desde nova, encontrou na tatuagem a forma perfeita de unir criatividade e conexão humana.
               </p>
               <p>
@@ -53,7 +53,7 @@ export function About() {
                 pessoal e a história de quem tatua.
               </p>
               <p>
-                No Ornato Estudio, o atendimento é personalizado do início ao fim — desde o primeiro contato pelo WhatsApp
+                O atendimento é personalizado do início ao fim — desde o primeiro contato pelo WhatsApp
                 até os cuidados pós-sessão. O ambiente é acolhedor, limpo e segue rigorosos padrões de biossegurança.
               </p>
             </div>

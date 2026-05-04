@@ -9,15 +9,9 @@ const schemaData = {
   telephone: '+5561999999999',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Plaza Mall',
-    addressLocality: 'Águas Claras',
+    addressLocality: 'Brasília',
     addressRegion: 'DF',
     addressCountry: 'BR',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: -15.8361,
-    longitude: -48.0444,
   },
   openingHoursSpecification: [
     {

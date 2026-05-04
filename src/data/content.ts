@@ -1,14 +1,14 @@
 export const WHATSAPP_NUMBER = '5562985168215'
-export const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar uma sessão na Ornato Estudio.'
+export const WHATSAPP_MESSAGE = 'Olá! Gostaria de agendar uma sessão!'
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export const SITE_CONFIG = {
-  name: 'Ornato Estudio',
+  name: 'Hanna Almeida',
   tagline: 'Tatuagem autoral e exclusiva',
   description:
-    'Estúdio de tatuagem autoral em Brasília-DF. Especialista em ornamental, fine line e realismo. Transforme sua ideia em arte na pele.',
+    'Tatuadora autoral em Brasília-DF. Especialista em realismo, fine line e ornamental. 8 anos transformando ideias em arte na pele.',
   artist: 'Hanna Almeida',
-  address: 'Plaza Mall, Águas Claras, Brasília-DF',
+  address: 'Brasília-DF',
   instagram: '@hanna_almeidatattoo',
   instagramUrl: 'https://www.instagram.com/hanna_almeidatattoo',
 }
@@ -164,8 +164,8 @@ export const faqItems: FAQItem[] = [
       'Sim! A Hanna tem experiência em coberturas. Envie uma foto da tatuagem que deseja cobrir via WhatsApp para avaliarmos as possibilidades.',
   },
   {
-    question: 'Onde fica o estúdio?',
+    question: 'Onde você atende?',
     answer:
-      'O Ornato Estudio fica no Plaza Mall, Águas Claras, Brasília-DF. Local de fácil acesso, com estacionamento e próximo ao metrô.',
+      'Atendo em Brasília-DF. Entre em contato pelo WhatsApp para saber o local e horários disponíveis para sua sessão.',
   },
 ]
