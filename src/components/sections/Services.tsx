@@ -1,4 +1,3 @@
-import { Clock } from 'lucide-react'
 import { services, WHATSAPP_URL } from '@/data/content'
 
 export function Services() {
@@ -38,13 +37,6 @@ export function Services() {
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
-
-                <div className="mt-6 border-t border-border pt-4">
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="h-3.5 w-3.5" />
-                    {service.duration}
-                  </div>
-                </div>
               </div>
             </div>
           ))}
