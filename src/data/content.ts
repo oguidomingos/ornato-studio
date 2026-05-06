@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   description:
     'Tatuadora autoral em Brasília-DF. Especialista em realismo, fine line e ornamental. 8 anos transformando ideias em arte na pele.',
   artist: 'Hanna Almeida',
-  address: 'Brasília-DF',
+  address: 'Ornato Estúdio — Plaza Mall, Sala 306, Q. 301 Águas Claras, Brasília - DF, 71909-540',
   instagram: '@hanna_almeidatattoo',
   instagramUrl: 'https://www.instagram.com/hanna_almeidatattoo',
 }

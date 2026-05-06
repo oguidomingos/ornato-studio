@@ -47,7 +47,7 @@ export function Header() {
           <span className="font-heading text-2xl font-bold tracking-wide text-accent">
             {SITE_CONFIG.name}
           </span>
-          <span className="text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-muted-foreground">
+          <span className="text-center text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-muted-foreground">
             Tattoo
           </span>
         </a>
