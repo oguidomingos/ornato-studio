@@ -6,11 +6,11 @@ type Category = 'todos' | PortfolioItem['category']
 
 const categories: { value: Category; label: string }[] = [
   { value: 'todos', label: 'Todos' },
-  { value: 'realismo', label: 'Realismo' },
   { value: 'fineline', label: 'Fine Line' },
   { value: 'blackwork', label: 'Blackwork' },
   { value: 'cobertura', label: 'Cobertura' },
   { value: 'concept', label: 'Concept' },
+  { value: 'realismo', label: 'Realismo' },
 ]
 
 export function Portfolio() {
@@ -32,7 +32,7 @@ export function Portfolio() {
             <span className="text-accent">Portfólio</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg">
-            Cada tatuagem é uma obra de arte única. Conheça alguns dos trabalhos realizados no estúdio.
+            Arte na pele, por Hanna Almeida
           </p>
         </div>
 

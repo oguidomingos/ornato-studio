@@ -58,6 +58,7 @@ export interface Service {
   title: string
   description: string
   duration: string
+  image: string
 }
 
 export const services: Service[] = [
@@ -66,30 +67,35 @@ export const services: Service[] = [
     description:
       'Reprodução fiel de imagens com riqueza de detalhes, sombras e texturas. Retratos, animais e natureza em preto e cinza.',
     duration: '3 a 8 horas',
+    image: 'images/realismo-01.jpg',
   },
   {
     title: 'Fine Line & Floral',
     description:
       'Traços finos e delicados, perfeitos para designs minimalistas, florais e botânicos. Sutileza e refinamento.',
     duration: '1 a 3 horas',
+    image: 'images/fineline-01.jpg',
   },
   {
     title: 'Blackwork',
     description:
       'Preenchimentos sólidos em preto, criando contrastes marcantes e composições ousadas com impacto visual.',
     duration: '2 a 5 horas',
+    image: 'images/blackwork-01.jpg',
   },
   {
     title: 'Cobertura',
     description:
       'Transformação de tatuagens antigas em novas obras de arte. Técnicas especializadas para coberturas perfeitas.',
     duration: 'Variável',
+    image: 'images/cobertura-01.jpg',
   },
   {
     title: 'Concept Art',
     description:
       'Criação autoral e exclusiva. Peças únicas que mesclam estilos e conceitos para uma tatuagem verdadeiramente sua.',
     duration: 'Variável',
+    image: 'images/concept-01.jpg',
   },
 ]
 

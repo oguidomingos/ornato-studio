@@ -1,4 +1,4 @@
-import { Clock, Sparkles } from 'lucide-react'
+import { Clock } from 'lucide-react'
 import { services, WHATSAPP_URL } from '@/data/content'
 
 export function Services() {
@@ -17,26 +17,33 @@ export function Services() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="group rounded-2xl border border-border bg-card p-6 transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5"
+              className="group overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
-                <Sparkles className="h-5 w-5 text-accent" />
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}${service.image}`}
+                  alt={`Exemplo de tatuagem ${service.title}`}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
 
-              <h3 className="font-heading text-xl font-bold text-foreground">{service.title}</h3>
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-bold text-foreground">{service.title}</h3>
 
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {service.description}
-              </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {service.description}
+                </p>
 
-              <div className="mt-6 border-t border-border pt-4">
-                <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                  <Clock className="h-3.5 w-3.5" />
-                  {service.duration}
+                <div className="mt-6 border-t border-border pt-4">
+                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Clock className="h-3.5 w-3.5" />
+                    {service.duration}
+                  </div>
                 </div>
               </div>
             </div>

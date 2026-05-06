@@ -5,7 +5,7 @@ const highlights = [
   {
     icon: Award,
     title: '8 Anos',
-    description: '8 anos de dedicação à arte da tatuagem com aperfeiçoamento constante em técnicas e estilos.',
+    description: 'Dedicados à arte da tatuagem, com aperfeiçoamento constante em técnicas e estilos.',
   },
   {
     icon: Heart,
@@ -43,18 +43,19 @@ export function About() {
             </h2>
 
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              <p>
-                Hanna Almeida é tatuadora em Brasília-DF com 8 anos de experiência.
-                Apaixonada pela arte desde nova, encontrou na tatuagem a forma perfeita de unir criatividade e conexão humana.
+              <p className="font-heading text-lg font-semibold italic text-foreground sm:text-xl">
+                &ldquo;Para mim, tatuar nunca foi só reproduzir um desenho. É sobre a confiança que você deposita no meu trabalho.&rdquo;
               </p>
               <p>
-                Especialista em estilos ornamental, fine line e realismo, Hanna se dedica a transformar as ideias de cada
-                cliente em arte exclusiva na pele. Cada traço é pensado com cuidado, respeitando a anatomia, o estilo
-                pessoal e a história de quem tatua.
+                Sou a Hanna, tatuadora em Brasília há 8 anos, e o que mais me fascina na tatuagem é a oportunidade de
+                transformar a sua ideia em uma arte que vai te acompanhar para sempre. Ao longo dessa jornada, me aprofundei
+                no <em>Ornamental, Fine Line</em> e <em>Realismo</em>, estilos que exigem precisão, técnica e muita sensibilidade.
               </p>
               <p>
-                O atendimento é personalizado do início ao fim — desde o primeiro contato pelo WhatsApp
-                até os cuidados pós-sessão. O ambiente é acolhedor, limpo e segue rigorosos padrões de biossegurança.
+                Quando você senta na minha maca, meu objetivo é garantir que a arte flua perfeitamente com o seu corpo e
+                faça sentido com a sua história. Quero que o seu processo seja tranquilo, no seu tempo, sem pressa. Meu
+                espaço foi pensado para que você se sinta em casa, com segurança, limpeza impecável e todo o suporte
+                necessário antes, durante e depois da sessão. Vamos criar algo único juntos?
               </p>
             </div>
 
