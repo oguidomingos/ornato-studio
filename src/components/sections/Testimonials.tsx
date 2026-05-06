@@ -12,9 +12,6 @@ export function Testimonials() {
           >
             O que dizem os <span className="text-accent">clientes</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base text-muted-foreground sm:text-lg">
-            A satisfação de quem já passou pelo estúdio é meu maior orgulho!
-          </p>
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

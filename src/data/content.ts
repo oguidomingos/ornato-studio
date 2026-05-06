@@ -67,14 +67,14 @@ export const services: Service[] = [
     description:
       'Reprodução fiel de imagens com riqueza de detalhes, sombras e texturas. Retratos, animais e natureza em preto e cinza.',
     duration: '3 a 8 horas',
-    image: 'images/realismo-01.jpg',
+    image: 'images/realismo-15.jpg',
   },
   {
     title: 'Fine Line & Floral',
     description:
       'Traços finos e delicados, perfeitos para designs minimalistas, florais e botânicos. Sutileza e refinamento.',
     duration: '1 a 3 horas',
-    image: 'images/fineline-01.jpg',
+    image: 'images/fineline-04.jpg',
   },
   {
     title: 'Blackwork',
@@ -88,7 +88,7 @@ export const services: Service[] = [
     description:
       'Transformação de tatuagens antigas em novas obras de arte. Técnicas especializadas para coberturas perfeitas.',
     duration: 'Variável',
-    image: 'images/cobertura-01.jpg',
+    image: 'images/cobertura-02.jpg',
   },
   {
     title: 'Concept Art',

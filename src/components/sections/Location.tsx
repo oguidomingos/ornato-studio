@@ -3,11 +3,12 @@ import { MapPin, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
 import { WHATSAPP_URL } from '@/data/content'
 
 const studioImages = [
-  { src: 'images/studio/studio-01.jpg', alt: 'Ornato Estúdio — fachada Plaza Mall' },
-  { src: 'images/studio/studio-02.jpg', alt: 'Ornato Estúdio — ambiente interno' },
-  { src: 'images/studio/studio-03.jpg', alt: 'Ornato Estúdio — sala de atendimento' },
-  { src: 'images/studio/studio-04.jpg', alt: 'Ornato Estúdio — espaço de trabalho' },
-  { src: 'images/studio/studio-05.jpg', alt: 'Ornato Estúdio — recepção' },
+  { src: 'images/studio/studio-01.png', alt: 'Ornato Estúdio — ambiente' },
+  { src: 'images/studio/studio-02.png', alt: 'Ornato Estúdio — espaço de trabalho' },
+  { src: 'images/studio/studio-03.png', alt: 'Ornato Estúdio — sala de atendimento' },
+  { src: 'images/studio/studio-04.png', alt: 'Ornato Estúdio — interior' },
+  { src: 'images/studio/studio-05.png', alt: 'Ornato Estúdio — detalhes' },
+  { src: 'images/studio/studio-06.png', alt: 'Ornato Estúdio — fachada Plaza Mall' },
 ]
 
 const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/N6ibE5vkT1Rap7rB9'
