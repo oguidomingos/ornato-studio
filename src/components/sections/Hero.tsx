@@ -25,9 +25,6 @@ export function Hero() {
         <h1 className="font-heading text-5xl font-bold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           <span className="text-accent">{SITE_CONFIG.name}</span>
         </h1>
-        <p className="mt-1 font-sans text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground/70 sm:text-sm">
-          Tattoo
-        </p>
 
         <p className="mx-auto mt-4 max-w-xl font-heading text-xl text-muted-foreground sm:text-2xl md:text-3xl">
           {SITE_CONFIG.tagline}

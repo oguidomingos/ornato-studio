@@ -43,8 +43,13 @@ export function Header() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Navegação principal">
-        <a href="#" className="font-heading text-2xl font-bold tracking-wide text-accent">
-          {SITE_CONFIG.name}
+        <a href="#" className="flex flex-col leading-tight">
+          <span className="font-heading text-2xl font-bold tracking-wide text-accent">
+            {SITE_CONFIG.name}
+          </span>
+          <span className="text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-muted-foreground">
+            Tattoo
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 lg:flex">
